@@ -5,22 +5,22 @@ const tasks = [
 
   {
     id: 1,
-    task: 'Morning Run',
+    task: 'Attend morning session meeting',
     completed: true,
   },
   {
     id: 2,
-    task: 'Learn Javasript',
+    task: 'Join coding partner session',
     completed: true,
   },
   {
     id: 3,
-    task: 'learn React js',
+    task: 'Complete daily tasks',
     completed: false,
   },
   {
     id: 4,
-    task: 'Play football',
+    task: 'Attend standup meeting',
     completed: false,
   },
 ];
