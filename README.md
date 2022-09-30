@@ -26,7 +26,9 @@
 👤 **Author1**
 
 -GitHub: @TechnoAndy
+
 -Twitter: @Adiegaardt
+
 -LinkedIn: Andrea Diegaardt
 
 ## 🤝 Contributing
