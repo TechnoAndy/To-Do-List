@@ -12,6 +12,11 @@
 - Javascript
 - Es6
 - Visual Studio Code
+
+## Live Demo 
+
+[Live Demo Link](https://technoandy.github.io/To-Do-List/dist/)
+
 ## Getting Started
 
 - To get a local copy up and running follow these simple example steps.
