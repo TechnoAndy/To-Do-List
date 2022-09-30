@@ -1,8 +1,8 @@
 /* eslint-disable linebreak-style */
 // css files here
 import './styles.css';
-import TodoList from './todolist.js';
-import * as Element from './elements.js';
+import TodoList from './modules/todolist.js';
+import * as Element from './modules/elements.js';
 
 const newTask = new TodoList();
 
@@ -13,7 +13,7 @@ const getCheck = (element) => ` ${
 } `;
 
 const showTaskItem = (element) => `<div class="list show">
-                ${getCheck(element)}                
+                ${getCheck(element)}
                 <p class="taskdescription ${
   element.completed ? 'strike' : ''
 }">${element.description}</p>
@@ -23,7 +23,7 @@ const showTaskItem = (element) => `<div class="list show">
           </div>`;
 
 const editDescription = (element) => `<div class="list edit">
-                 ${getCheck(element)} 
+                 ${getCheck(element)}
                 <input type="text" class="desc" value="${
   element.description
 }" aria-label ="${element.index}" >
