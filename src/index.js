@@ -53,41 +53,41 @@ Element.addList.addEventListener('keydown', (e) => {
     if (val) {
       newTask.addTask(val);
       Element.addList.value = '';
-      refresh();
+      update();
     }
   }
 });
 
-Element.listBody.addEventListener('click', (e) => {
+Element.body.addEventListener('click', (e) => {
   if (e.target.nodeName === 'I') {
     if (e.target.dataset.name === 'edit') {
       newTask.setEdit(e.target.ariaLabel);
-      refresh();
+      update();
     } else if (e.target.dataset.name === 'delete') {
       newTask.removeTask(parseInt(e.target.ariaLabel, 10));
-      refresh();
+      update();
     }
   }
 });
 
-Element.listBody.addEventListener('keydown', (e) => {
+Element.body.addEventListener('keydown', (e) => {
   if (e.code === 'Enter') {
     if (e.target.value) {
       const id = parseInt(e.target.ariaLabel, 10);
       newTask.editTask(id, e.target.value);
-      refresh();
+      update();
     }
   }
 });
 
-Element.listBody.addEventListener('change', (e) => {
+Element.body.addEventListener('change', (e) => {
   if (e.target.dataset.name === 'status') {
     newTask.changeComplete(parseInt(e.target.ariaLabel, 10));
-    refresh();
+    update();
   }
 });
 
-Element.clear.addEventListener('click', () => {
-  newTask.clearCompleted();
-  refresh();
+Element.clearlist.addEventListener('click', () => {
+  newTask.clearlistCompleted();
+  update();
 });
