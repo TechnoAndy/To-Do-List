@@ -1,11 +1,13 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 # To-do-list
-- In this project, you will build a simple HTML list of To Do tasks. The list will be styled according to the specifications listed later in this lesson. This simple web page will be built using webpack and served by a webpack dev server.
+- In this project, I built a simple HTML list of To Do tasks. You can add your daily to do list and cross them off your list as you have completed it. The data gets stored to local storage but is removed once the task has been deleted off this lis. This simple web page will be built using webpack and served by a webpack dev server.
+
 ## Description the project.
 - Create a basic UI using HTML
 - build a basic website that allows users to add/remove work activities
 - Use Javascript objects and arrays
+
 ## Built With
 
 - HTML
