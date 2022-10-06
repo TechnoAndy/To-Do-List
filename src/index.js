@@ -22,7 +22,7 @@ const showListItem = (element) => `<div class="list show">
 }"  data-name="edit"></i>
           </div>`;
 
-const editDescription = (element) => `<div class="list edit">
+const editDescrip = (element) => `<div class="list edit">
                  ${getTick(element)}
                 <input type="text" class="desc" value="${
   element.description
@@ -38,11 +38,11 @@ const update = () => {
   if (list) {
     list.forEach((element) => {
       content += `${
-        element.edit ? editDescription(element) : showListItem(element)
+        element.edit ? editDescrip(element) : showListItem(element)
       }`;
     });
   }
-  Element.listBody.innerHTML = content;
+  Element.Body.innerHTML = content;
 };
 update();
 
