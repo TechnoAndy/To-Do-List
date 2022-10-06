@@ -32,7 +32,7 @@ const editDescription = (element) => `<div class="list edit">
 }"  data-name="delete"></i>
           </div>`;
 
-const refresh = () => {
+const update = () => {
   const list = newTask.listArray;
   let content = '';
   if (list) {
@@ -44,7 +44,7 @@ const refresh = () => {
   }
   Element.listBody.innerHTML = content;
 };
-refresh();
+update();
 
 // Event Listeners
 Element.addList.addEventListener('keydown', (e) => {
