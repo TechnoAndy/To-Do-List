@@ -6,14 +6,14 @@ import * as Element from './modules/elements.js';
 
 const newTask = new TodoList();
 
-const getCheck = (element) => ` ${
+const getTick = (element) => ` ${
   element.completed
     ? `<input type="checkbox" aria-label="${element.index}" data-name="status" name="check" checked>`
     : `<input type="checkbox" aria-label="${element.index}" data-name="status" name="check">`
 } `;
 
-const showTaskItem = (element) => `<div class="list show">
-                ${getCheck(element)}
+const showListItem = (element) => `<div class="list show">
+                ${getTick(element)}
                 <p class="taskdescription ${
   element.completed ? 'strike' : ''
 }">${element.description}</p>
@@ -23,7 +23,7 @@ const showTaskItem = (element) => `<div class="list show">
           </div>`;
 
 const editDescription = (element) => `<div class="list edit">
-                 ${getCheck(element)}
+                 ${getTick(element)}
                 <input type="text" class="desc" value="${
   element.description
 }" aria-label ="${element.index}" >
@@ -38,7 +38,7 @@ const update = () => {
   if (list) {
     list.forEach((element) => {
       content += `${
-        element.edit ? editDescription(element) : showTaskItem(element)
+        element.edit ? editDescription(element) : showListItem(element)
       }`;
     });
   }
